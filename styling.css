@@ -1,0 +1,59 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff002f; /* rdeči naslov */
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ff002f;
+  color: #ff002f;
+  font-size: 1.15em;
+}
+
+/* posamezne “kartice” za pijače */
+p {
+  background-color: #ffd8d8; /* zelo svetla roza/cream kot “kartica” */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 1px 2px 6px rgba(255, 144, 144, 0.799);
+  padding: 10px 14px;
+  margin: 8px 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+/* efekt hover */
+p:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ime pijače */
+.cocktail {
+  font-weight: 700;
+  color: #000; /* črno ime */
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* sestavine v oklepajih */
+p::after {
+  content: attr(data-ingredients);
+  display: block;
+  color: #666; /* svetlo siva */
+  font-size: 0.88em;
+}
