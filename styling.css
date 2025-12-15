@@ -35,7 +35,7 @@ p {
   line-height: 1.4;
   transition: transform 0.15s, box-shadow 0.15s;
 }
-p.wine-mix {
+p.miksi {
   background-color: #fbe6ef;
   border-color: #b03060;
   box-shadow: 1px 2px 6px rgba(176, 48, 96, 0.35);
